@@ -7,10 +7,11 @@ public class playerCtrl : MonoBehaviour
     Vector3 screenPosition;//将物体从世界坐标转换为屏幕坐标
     Vector3 mousePositionOnScreen;//获取到点击屏幕的屏幕坐标
     Vector3 mousePositionInWorld;//将点击屏幕的屏幕坐标转换为世界坐标
+    public float MoveSpeed;
 
     void Start()
     {
-
+        MoveSpeed = 100.0f;
     }
     void Update()
     {
@@ -27,7 +28,7 @@ public class playerCtrl : MonoBehaviour
         //将相机中的坐标转化为世界坐标
         mousePositionInWorld = Camera.main.ScreenToWorldPoint(mousePositionOnScreen);
         //物体跟随鼠标移动
-        transform.position = mousePositionInWorld;
+        transform.position+=mousePositionInWorld*MoveSpeed*Time.deltaTime;
         //物体跟随鼠标X轴移动
         //transform.position = new Vector3(mousePositionInWorld.x, transform.position.y, transform.position.z);
     }
