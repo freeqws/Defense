@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\playerCtrl.cs" />
+    <Compile Include="Assets\Scripts\shootDefault.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Work/GameDevelop/DefenseShoot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
