@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shootDefault : MonoBehaviour
+public class shoot01 : MonoBehaviour
 {
     public GameObject bullet;
     public float destroyBullet;
     public float bulletSpeed;
     private Rigidbody2D rb2d;
+    public int gunAttack;
 
     public float nextFire;
     public float fireRate = 1;
