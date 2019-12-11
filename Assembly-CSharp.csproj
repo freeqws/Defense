@@ -67,8 +67,9 @@
     <Compile Include="Assets\Scripts\enemy\enemy01.cs" />
     <Compile Include="Assets\Scripts\playerCtrl.cs" />
     <Compile Include="Assets\Scripts\shoot01.cs" />
-    <Compile Include="Assets\Scripts\test\characterMoveAxis.cs" />
-    <Compile Include="Assets\Scripts\test\characterMoveTranslate.cs" />
+    <Compile Include="Assets\Scripts\test\Info\test.cs" />
+    <Compile Include="Assets\Scripts\test\Move\characterMoveAxis.cs" />
+    <Compile Include="Assets\Scripts\test\Move\characterMoveTranslate.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Work/unityProject/DefenseShooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
