@@ -6,12 +6,14 @@ public class enemy01 : MonoBehaviour
 {
     public float MoveSpeed;
     int hp;
+    bool hit;
 
 
 
     void Start()
     {
         hp = 10;
+        hit = false;
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class enemy01 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("Hit!!!!" + col.gameObject.name);
-
+        hit = true;
         hp -= 1;
     }
 }
