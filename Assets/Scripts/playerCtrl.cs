@@ -15,7 +15,7 @@ public class playerCtrl : MonoBehaviour
 
     void Start()
     {
-        MoveSpeed = playerInfo.playerSpeed;
+        MoveSpeed = 10;
         targetPosition.y = transform.position.y;
     }
     void Update()
